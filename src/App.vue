@@ -1,30 +1,23 @@
+<style>
+ @import '../public/frontend/assets/css/swiper-bundle.min.css';
+ @import '../public/frontend/assets/css/styles.css';
+</style>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <master></master>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-nav {
-  padding: 30px;
-}
+import Master from "./views/MasterView.vue"
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+export default {
+  mounted() {
+    let Script = document.createElement("script");
+    Script.setAttribute("src", "./frontend/assets/js/main.js");
+    document.head.appendChild(Script);
+  },
+  components: {Master}
+};
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
