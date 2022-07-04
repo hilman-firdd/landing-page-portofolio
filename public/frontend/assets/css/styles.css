@@ -808,6 +808,10 @@ img {
   outline: none;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -2rem!important;
+}
+
 /*==================== PROJECT IN MIND ====================*/
 .project {
   text-align: center;
@@ -1097,7 +1101,6 @@ img {
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
-
   .home__data{
     grid-column: initial;
   }
@@ -1218,7 +1221,7 @@ img {
   }
 
   .qualification__tabs{
-    justify-content: center;
+    justify-content: center!important;
   }
 
   .qualification__button{
@@ -1253,6 +1256,7 @@ img {
   .portofolio__content{
     align-items: center;
   }
+
 
   .project{
     text-align: initial;
@@ -1305,7 +1309,7 @@ img {
   .main,
   .footer__container{
     padding: 0;
-  }
+  } 
 
   .home__blob{
     width: 320px;

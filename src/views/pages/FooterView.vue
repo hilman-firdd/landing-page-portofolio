@@ -12,7 +12,7 @@
                         <a href="#services" class="footer_link">Services</a>
                     </li>
                     <li>
-                        <a href="#portofolio" class="footer_link">Portofolio</a>
+                        <a href="#portfolio" class="footer_link">Portofolio</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer_link">Contactme</a>
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; hiLmAnFiRdaus. All right reserved</p>
+            <p class="footer__copy">&#169; Hilmanfirdaus. All right reserved</p>
         </div>
     </footer>
 </template>

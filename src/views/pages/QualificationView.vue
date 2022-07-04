@@ -102,13 +102,13 @@
                             <h3 class="qualification__title">Teacher, vocational high School
                             </h3>
                             <span class="qualification__subtile">SMK Persis 02 - West Java, Bandung</span>
-                            <span class="qualification__subtile">Computer Hardware</span>
                             <div class="qualification__calender">
                                 <i class="uil uil-calender-alt"></i>
                                 2017-present
                             </div>
                         </div>
                     </div>
+                    
                     <!--==================== QUALIFICATION 2 ====================-->
                     <div class="qualification__data">
                         <div></div>
@@ -122,7 +122,6 @@
                             <h3 class="qualification__title">Teacher, vocational high School
                             </h3>
                             <span class="qualification__subtile">SMK Widya Dirgantara - West Java, Bandung</span>
-                            <span class="qualification__subtile">Computer Hardware & Software</span>
                             <div class="qualification__calender">
                                 <i class="uil uil-calender-alt"></i>
                                 2017-present
@@ -166,11 +165,9 @@
                                 2022
                             </div>
                         </div>
-
-
                     </div>
 
-                    <!--==================== QUALIFICATION 5 ====================-->
+                    <!--==================== QUALIFICATION 2 ====================-->
                     <div class="qualification__data">
                         <div></div>
 
