@@ -16,4 +16,4 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+POKONA BISMILLAH TO WORK FROM HOME/REMOTE ONLY

@@ -103,6 +103,54 @@
                         </a>
                     </div>
                 </div>
+
+                <!--==================== PORTFOLIO 7 ====================-->
+                <div class="portofolio__content grid swiper-slide">
+                    <img src="frontend/assets/img/7.png" alt="" class="portofolio__img">
+
+                    <div class="portofolio__data">
+                        <h3 class="portofolio__title">Sistem Administrasi Anaonline Website</h3>
+                        <p class="portofolio__description">Website adaptable to all devices, with ui components and
+                            animated interactions.
+                        </p>
+                        <a href="https://anaonline.id" class="button button--flex button--small portofolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== PORTFOLIO 8 ====================-->
+                <div class="portofolio__content grid swiper-slide">
+                    <img src="frontend/assets/img/6.png" alt="" class="portofolio__img">
+
+                    <div class="portofolio__data">
+                        <h3 class="portofolio__title">Sistem Administrasi Anisa Online Website</h3>
+                        <p class="portofolio__description">Website adaptable to all devices, with ui components and
+                            animated interactions.
+                        </p>
+                        <a href="https://annisaonline.pemudi.persis.or.id/" class="button button--flex button--small portofolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== PORTFOLIO 9 ====================-->
+                <div class="portofolio__content grid swiper-slide">
+                    <img src="frontend/assets/img/8.png" alt="" class="portofolio__img">
+
+                    <div class="portofolio__data">
+                        <h3 class="portofolio__title">Finance companies that provide financial services</h3>
+                        <p class="portofolio__description">Website adaptable to all devices, with ui components and
+                            animated interactions.
+                        </p>
+                        <a href="https://mofi.id/" class="button button--flex button--small portofolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- add arrows -->
             <div class="swiper-button-next">

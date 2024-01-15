@@ -4,7 +4,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Hilman Firdaus</h1>
-                    <span class="footer__subtitle">Fullstack Developer</span>
+                    <span class="footer__subtitle">Fullstack Developer & Software Quality</span>
                 </div>
 
                 <ul class="footer__links">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; Hilmanfirdaus. All right reserved</p>
+            <p class="footer__copy">&#169; Hilman Firdaus. All right reserved</p>
         </div>
     </footer>
 </template>

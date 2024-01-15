@@ -3,7 +3,7 @@
         <div class="home__container container grid">
             <div class="home__content grid">
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/hilman-firdd/" class="home__social-icon" target="_blank">
+                    <a href="https://www.linkedin.com/in/hilmanfirdd/" class="home__social-icon" target="_blank">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
                     <a href="https://www.instagram.com/hilman_firdd" class="home__social-icon" target="_blank">
@@ -36,9 +36,9 @@
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Hi, I'am Hilman Firdaus</h1>
-                    <h3 class="home__subtitle"> Fullstack Developer</h3>
-                    <p class="home__description">High level experience in web design and development knowledge, producing quality work.
+                    <h1 class="home__title" style="font-size: 25px;">Hi, I'am Hilman Firdaus</h1>
+                    <h3 class="home__subtitle" style="font-size: 10px;"> Fullstack Developer & Software Enginer in Test (SDET)</h3>
+                    <p class="home__description">High level experience in web design and development knowledge, producing high quality software.
                     </p>
                     <a href="#contact" class="button button--flex">
                         Contact Me <i class="uil uil-message button__icon"></i>

@@ -514,32 +514,36 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__tailwind {
+  width: 70%;
+}
+
+.skills__bootstrap {
   width: 90%;
 }
 
-.skills__css {
-  width: 80%;
+.skills__next{
+  width: 40%;
 }
 
-.skills__javascript{
-  width: 60%;
+.skills__nuxt{
+  width: 50%;
 }
 
-.skills__vue{
-  width: 70%;
+.skills__angular{
+  width: 30%;
 }
 
 .skills__php{
   width: 80%;
 }
 
-.skills__node{
-  width: 60%;
+.skills__nest{
+  width: 40%;
 }
 
-.skills__firebase{
-  width: 60%;
+.skills__golang{
+  width: 20%;
 }
 
 .skills__java{
@@ -551,7 +555,7 @@ img {
 }
 
 .skills__adobe{
-  width: 80%;
+  width: 30%;
 }
 
 .skills__photoshop{
@@ -559,8 +563,57 @@ img {
 }
 
 .skills__corel{
+  width: 30%;
+}
+
+.skills__playwright{
+  width: 85%;
+}
+
+.skills__katalon{
+  width: 85%;
+}
+
+.skills__webdriver{
+  width: 80%;
+}
+
+.skills__webdriver{
+  width: 80%;
+}
+
+.skills__selenium{
+  width: 80%;
+}
+
+.skills__cypress{
+  width: 80%;
+}
+
+.skills__anylanguange{
+  width: 75%;
+}
+
+.skills__jenkins{
+  width: 45%;
+}
+
+.skills__aws{
+  width: 55%;
+}
+
+.skills__gcp{
   width: 40%;
 }
+
+.skills__docker{
+  width: 40%;
+}
+
+.skills__anytools{
+  width: 40%;
+}
+
 
 .skills__close .skills__list{
   height: 0;

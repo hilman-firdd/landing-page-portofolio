@@ -4,11 +4,12 @@
         <span class="section__subtitle">What i offer</span>
 
         <div class="services__container container grid">
+
             <!--==================== SERVICES 1 ====================-->
             <div class="services__content">
                 <div>
-                    <i class="uil uil-web-grid services__icon"></i>
-                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                    <i class="uil uil-pen services__icon"></i>
+                    <h3 class="services__title">Software Enginer <br> in Test (SDET)</h3>
                 </div>
 
                 <span class="button button--flex button--small button--link services__button">
@@ -18,25 +19,17 @@
 
                 <div class="services__modal">
                     <div class="services__modal-content">
-                        <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                        <h4 class="services__modal-title">Software <br> Quality</h4>
                         <i class="uil uil-times services__modal-close"></i>
 
                         <ul class="services__modal-services grid">
                             <li class="services__modal-service">
                                 <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I develop the user interface.</p>
+                                <p>I create testcase and idea for test strategies.</p>
                             </li>
                             <li class="services__modal-service">
                                 <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>Web page development.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I create ux element interactions.</p>
-                            </li>
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p>I position your company brand.</p>
+                                <p>Implementations in the automation tools.</p>
                             </li>
                         </ul>
                     </div>
@@ -120,8 +113,8 @@
             <!--==================== SERVICES 4 ====================-->
             <div class="services__content">
                 <div>
-                    <i class="uil uil-pen services__icon"></i>
-                    <h3 class="services__title">Branding <br> Designer</h3>
+                    <i class="uil uil-web-grid services__icon"></i>
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
                 </div>
 
                 <span class="button button--flex button--small button--link services__button">
@@ -131,10 +124,18 @@
 
                 <div class="services__modal">
                     <div class="services__modal-content">
-                        <h4 class="services__modal-title">Branding <br> Designer</h4>
+                        <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
                         <i class="uil uil-times services__modal-close"></i>
 
                         <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p>Web page development.</p>
+                            </li>
                             <li class="services__modal-service">
                                 <i class="uil uil-check-circle services__modal-icon"></i>
                                 <p>I create ux element interactions.</p>
@@ -147,6 +148,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
