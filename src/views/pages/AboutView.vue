@@ -7,13 +7,13 @@
             <img src="frontend/assets/img/about-2.jpeg" alt="" class="about__img">
 
             <div class="about__data">
-                <p class="about__description">Web developer, with extensive knowledge and years of experience, working
+                <p class="about__description">Software Engineer, with extensive knowledge and years of experience, working
                     in web technologies, SDET, UI/UX design, delivering quality work.
                 </p>
 
                 <div class="about__info">
                     <div>
-                        <span class="about__info-title">05+</span>
+                        <span class="about__info-title">08+</span>
                         <span class="about__info-name">Years <br> experience</span>
                     </div>
                     <div>
