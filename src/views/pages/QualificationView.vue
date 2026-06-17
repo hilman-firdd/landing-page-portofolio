@@ -1,18 +1,18 @@
 <template>
     <section class="qualification section">
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My Personal Journey</span>
+        <h2 class="section__title">git log --journey</h2>
+        <span class="section__subtitle">commit history of my career</span>
 
         <div class="qualification__container container">
             <div class="qualification__tabs">
                 <div class="qualification__button button--flex qualification__active" data-target="#education">
                     <i class="uil uil-graduation-cap qualification__icon"></i>
-                    Education
+                    education
                 </div>
 
                 <div class="qualification__button button--flex" data-target="#work">
                     <i class="uil uil-briefcase-alt qualification__icon"></i>
-                    Work
+                    work
                 </div>
             </div>
             <div class="qualification__sections">

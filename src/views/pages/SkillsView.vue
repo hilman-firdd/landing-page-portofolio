@@ -1,7 +1,7 @@
 <template>
     <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+        <h2 class="section__title">stack --list</h2>
+        <span class="section__subtitle">tech stack &amp; proficiency levels</span>
 
         <div class="skills_container container grid">
             <div>

@@ -3,11 +3,12 @@
         <div class="project__bg">
             <div class="project__container container grid">
                 <div class="project__data">
-                    <h2 class="project__title">You have a new project</h2>
-                    <p class="project__description">Contact me now and get a 30% discount on your new project.
+                    <h2 class="project__title">init new-project</h2>
+                    <p class="project__description">Got an idea in the backlog? Run the deploy with me and get a
+                        30% discount on your new project.
                     </p>
                     <a href="#contact" class="button button--flex button--white">
-                        Contact Me <i class="uil uil-message project__icon button__icon"></i>
+                        run --deploy <i class="uil uil-message project__icon button__icon"></i>
                     </a>
                 </div>
 

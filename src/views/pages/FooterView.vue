@@ -3,8 +3,8 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">Hilman Firdaus</h1>
-                    <span class="footer__subtitle">Fullstack Developer & Software Quality</span>
+                    <h1 class="footer__title">hilman_firdd</h1>
+                    <span class="footer__subtitle">Fullstack Developer · SDET · DevOps</span>
                 </div>
 
                 <ul class="footer__links">

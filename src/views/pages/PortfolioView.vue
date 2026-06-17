@@ -1,7 +1,7 @@
 <template>
     <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portofolio</h2>
-        <span class="section__subtitle">Most recent work</span>
+        <h2 class="section__title">ls ./projects</h2>
+        <span class="section__subtitle">recent deployments &amp; live builds</span>
 
         <div class="portofolio__container container swiper">
             <div class="swiper-wrapper">

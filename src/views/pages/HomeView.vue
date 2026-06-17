@@ -17,31 +17,29 @@
                     </a>
                 </div>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image class="home__blob-img" x="12" y="-25" href="frontend/assets/img/home.png"/>
-                        </g>
-                    </svg>                            
-                </div>
-
                 <div class="home__data">
-                    <h1 class="home__title" style="font-size: 25px;">Hi, I'am Hilman Firdaus</h1>
-                    <h3 class="home__subtitle" style="font-size: 10px;"> Fullstack Developer & Software Enginer in Test (SDET)</h3>
-                    <p class="home__description">High level experience in web design and development knowledge, producing high quality software.
-                    </p>
+                    <div class="hero-term term-window">
+                        <div class="term-window__bar">
+                            <div class="term-window__dots"><span></span><span></span><span></span></div>
+                            <span class="term-window__title"><i class="uil uil-shell"></i> hilman@portfolio: ~</span>
+                        </div>
+                        <div class="term-window__body hero-term__body">
+                            <p class="hero-line"><span class="prompt"><span class="user">visitor</span><span class="at">@</span><span class="host">portfolio</span><span class="sym">:</span><span class="path">~</span><span class="sym">$</span></span> <span id="hero-cmd" class="cmd"></span><span class="cursor" id="hero-cursor"></span></p>
+                            <div class="hero-output" id="hero-output" style="display:none">
+                                <h1 class="home__title">Hi, I'm <span class="accent">Hilman Firdaus</span></h1>
+                                <h3 class="home__subtitle">
+                                    <span class="sym">&gt;</span> <span class="role" id="typed-role"></span><span class="cursor"></span>
+                                </h3>
+                                <p class="home__description">
+                                    High level experience in web design &amp; development, building, testing and
+                                    shipping high quality software end-to-end.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="#contact" class="button button--flex">
-                        Contact Me <i class="uil uil-message button__icon"></i>
+                        ./contact.sh <i class="uil uil-message button__icon"></i>
                     </a>
                 </div>
             </div>
@@ -49,7 +47,7 @@
             <div class="home__scroll">
                 <a href="#about" class="home__scroll-button button--flex">
                     <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                    <span class="home__scroll-name">Scroll down</span>
+                    <span class="home__scroll-name">scroll --down</span>
                     <i class="uil uil-arrow-down home__scroll-arrow"></i>
                 </a>
             </div>

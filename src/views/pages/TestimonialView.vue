@@ -1,7 +1,7 @@
 <template>
     <section class="testimonial section">
-        <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">My Client saying</span>
+        <h2 class="section__title">cat reviews.log</h2>
+        <span class="section__subtitle">what my clients are saying</span>
 
         <div class="testimonial__container container swiper">
             <div class="swiper-wrapper">

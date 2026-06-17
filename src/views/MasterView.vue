@@ -13,6 +13,9 @@
             <!--==================== SKILLS ====================-->
             <skills/>
 
+            <!--==================== GITHUB ACTIVITY ====================-->
+            <github/>
+
             <!--==================== QUALIFICATION ====================-->
             <qualification/>
 
@@ -47,6 +50,7 @@ import Headerr from './pages/HeaderrView.vue';
 import Home from './pages/HomeView.vue';
 import About from './pages/AboutView.vue';
 import Skills from './pages/SkillsView.vue';
+import Github from './pages/GithubView.vue';
 import Qualification from './pages/QualificationView.vue';
 import Services from './pages/ServicesView.vue';
 import Portfolio from './pages/PortfolioView.vue';
@@ -56,7 +60,7 @@ import Contact from './pages/ContactView.vue';
 import Footerr from './pages/FooterView.vue';
 
 export default {
-    components: {Headerr, Home, About, Skills, Qualification, Services, Portfolio, Project, Testimonial, Contact, Footerr},
+    components: {Headerr, Home, About, Skills, Github, Qualification, Services, Portfolio, Project, Testimonial, Contact, Footerr},
     name: 'Master'
 };
 </script>

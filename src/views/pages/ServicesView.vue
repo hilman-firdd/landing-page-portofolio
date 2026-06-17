@@ -1,7 +1,7 @@
 <template>
     <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What i offer</span>
+        <h2 class="section__title">./services --list</h2>
+        <span class="section__subtitle">what i can build &amp; ship for you</span>
 
         <div class="services__container container grid">
 
