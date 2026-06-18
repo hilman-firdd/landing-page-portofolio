@@ -1,34 +1,16 @@
 <template>
     <section class="contact section" id="contact">
-        <h2 class="section__title">ssh hilman@contact</h2>
-        <span class="section__subtitle">open a connection — let's talk</span>
+        <h2 class="section__title">{{ contact.title }}</h2>
+        <span class="section__subtitle">{{ contact.subtitle }}</span>
 
         <div class="contact__container container grid">
             <div>
-                <div class="contact__information">
-                    <i class="uil uil-phone contact__icon"></i>
+                <div class="contact__information" v-for="(info, i) in contact.items" :key="i">
+                    <i class="uil contact__icon" :class="info.icon"></i>
 
                     <div>
-                        <h3 class="contact__title">Call me</h3>
-                        <span class="contact__subtitle">081914209656</span>
-                    </div>
-                </div>
-
-                <div class="contact__information">
-                    <i class="uil uil-envelope contact__icon"></i>
-
-                    <div>
-                        <h3 class="contact__title">Email</h3>
-                        <span class="contact__subtitle">halo@hilmanfirdd.my.id</span>
-                    </div>
-                </div>
-
-                <div class="contact__information">
-                    <i class="uil uil-map-marker contact__icon"></i>
-
-                    <div>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__subtitle">Cigondewah - Kota Bandung</span>
+                        <h3 class="contact__title">{{ info.title }}</h3>
+                        <span class="contact__subtitle">{{ info.value }}</span>
                     </div>
                 </div>
             </div>
@@ -65,7 +47,12 @@
 </template>
 
 <script>
+import data from '../../data/portfolio.json'
+
 export default {
-    name: 'Contact'
+    name: 'Contact',
+    data() {
+        return { contact: data.contact }
+    }
 }
 </script>

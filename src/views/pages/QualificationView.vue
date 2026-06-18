@@ -1,7 +1,7 @@
 <template>
     <section class="qualification section">
-        <h2 class="section__title">git log --journey</h2>
-        <span class="section__subtitle">commit history of my career</span>
+        <h2 class="section__title">{{ qualification.title }}</h2>
+        <span class="section__subtitle">{{ qualification.subtitle }}</span>
 
         <div class="qualification__container container">
             <div class="qualification__tabs">
@@ -16,16 +16,15 @@
                 </div>
             </div>
             <div class="qualification__sections">
-                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <!--==================== EDUCATION ====================-->
                 <div class="qualification__content qualification__active" data-content id="education">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__data">
+                    <div class="qualification__data" v-for="(item, i) in qualification.education" :key="'edu' + i">
                         <div>
-                            <h3 class="qualification__title">Computer Engineer</h3>
-                            <span class="qualification__subtile">Nurtanio - University</span>
+                            <h3 class="qualification__title">{{ item.title }}</h3>
+                            <span class="qualification__subtile">{{ item.place }}</span>
                             <div class="qualification__calender">
                                 <i class="uil uil-calender-alt"></i>
-                                2017-2020
+                                {{ item.date }}
                             </div>
                         </div>
 
@@ -34,63 +33,11 @@
                             <span class="qualification__line"></span>
                         </div>
                     </div>
-
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Master Computer Science</h3>
-                            <span class="qualification__subtile">President - University</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                On Going
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 3 ====================-->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Fullstack Developement</h3>
-                            <span class="qualification__subtile">Bootcamp - Santri Koding</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2021
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 4 ====================-->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">Fullstack Developement</h3>
-                            <span class="qualification__subtile">Bootcamp - Built with Angga</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2022
-                            </div>
-                        </div>
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-
-
-
                 </div>
 
-                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <!--==================== WORK ====================-->
                 <div class="qualification__content" data-content id="work">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__data">
+                    <div class="qualification__data" v-for="(item, i) in qualification.work" :key="'work' + i">
                         <div></div>
 
                         <div>
@@ -99,93 +46,14 @@
                         </div>
 
                         <div>
-                            <h3 class="qualification__title">Teacher, vocational high School
-                            </h3>
-                            <span class="qualification__subtile">SMK Persis 02 - West Java, Bandung</span>
+                            <h3 class="qualification__title">{{ item.title }}</h3>
+                            <span class="qualification__subtile">{{ item.place }}</span>
                             <div class="qualification__calender">
                                 <i class="uil uil-calender-alt"></i>
-                                2017-present
+                                {{ item.date }}
                             </div>
                         </div>
                     </div>
-                    
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">Teacher, vocational high School
-                            </h3>
-                            <span class="qualification__subtile">SMK Widya Dirgantara - West Java, Bandung</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2017-present
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 3 ====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">Fullstack web development</h3>
-                            <span class="qualification__subtile">Hilfi Developer - West Java, Bandung</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2017-present
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 4 ====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">Frontend Developer</h3>
-                            <span class="qualification__subtile">Freelance - Bandung</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2022
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">UI UX Design</h3>
-                            <span class="qualification__subtile">Mentor - Nurtanio University</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calender-alt"></i>
-                                2021
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -193,8 +61,12 @@
 </template>
 
 <script>
-export default {
-    name: 'Qualification'
-}
+import data from '../../data/portfolio.json'
 
+export default {
+    name: 'Qualification',
+    data() {
+        return { qualification: data.qualification }
+    }
+}
 </script>

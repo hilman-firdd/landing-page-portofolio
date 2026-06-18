@@ -1,0 +1,223 @@
+{
+  "whatsapp": "6281914209656",
+  "profile": {
+    "name": "Hilman Firdaus",
+    "username": "hilman-firdd",
+    "terminalTitle": "hilman@portfolio: ~",
+    "heroCommand": "whoami && cat profile.json",
+    "roles": [
+      "Fullstack Developer",
+      "Software Engineer in Test (SDET)",
+      "DevOps Engineer",
+      "UI/UX Designer"
+    ],
+    "description": "High level experience in web design & development, building, testing and shipping high quality software end-to-end.",
+    "socials": [
+      { "icon": "uil-linkedin-alt", "url": "https://www.linkedin.com/in/hilmanfirdd/" },
+      { "icon": "uil-instagram", "url": "https://www.instagram.com/hilman_firdd" },
+      { "icon": "uil-github-alt", "url": "https://github.com/hilman-firdd" },
+      { "icon": "uil-whatsapp", "url": "https://api.whatsapp.com/send?phone=6281914209656" }
+    ]
+  },
+  "about": {
+    "title": "whoami",
+    "subtitle": "cat about.md",
+    "windowTitle": "about.md",
+    "image": "frontend/assets/img/about-2.jpeg",
+    "description": "Software Engineer with extensive knowledge and years of experience, working across web technologies, SDET & test automation, DevOps and UI/UX, delivering quality work end-to-end.",
+    "stats": [
+      { "value": "08+", "label": "years\nuptime" },
+      { "value": "50+", "label": "projects\nshipped" },
+      { "value": "04+", "label": "companies\ndeployed" }
+    ],
+    "cv": "frontend/assets/pdf/Hilman-Firdaus-CV.pdf"
+  },
+  "skills": {
+    "title": "stack --list",
+    "subtitle": "tech stack & proficiency levels",
+    "groups": [
+      {
+        "icon": "uil-brackets-curly",
+        "title": "Frontend developer",
+        "subtitle": "More than 2 years",
+        "items": [
+          { "name": "Tailwind", "level": 70 },
+          { "name": "Bootstrap", "level": 90 },
+          { "name": "Next Js", "level": 40 },
+          { "name": "Nuxt Js", "level": 50 },
+          { "name": "Angular", "level": 30 }
+        ]
+      },
+      {
+        "icon": "uil-server-network",
+        "title": "Backend developer",
+        "subtitle": "More than 2 years",
+        "items": [
+          { "name": "PHP", "level": 80 },
+          { "name": "Nest Js", "level": 40 },
+          { "name": "Golang", "level": 20 },
+          { "name": "Java", "level": 40 }
+        ]
+      },
+      {
+        "icon": "uil-syringe",
+        "title": "Software Enginer In Test (SDET)",
+        "subtitle": "More than 3 years",
+        "items": [
+          { "name": "Playwright Tools", "level": 85 },
+          { "name": "Katalon Tools", "level": 85 },
+          { "name": "Webdriver Io", "level": 80 },
+          { "name": "Cypress", "level": 80 },
+          { "name": "Selenium", "level": 80 },
+          { "name": "Cucumber, Java, Javascript, Typescript, Functional & Non Functional", "level": 75 }
+        ]
+      },
+      {
+        "icon": "uil-share-alt",
+        "title": "DevOps",
+        "subtitle": "More than 1 years",
+        "items": [
+          { "name": "Jenkins Tools", "level": 45 },
+          { "name": "Amazon Web Services (AWS)", "level": 55 },
+          { "name": "Google Cloud Platform (GCP)", "level": 40 },
+          { "name": "Docker", "level": 40 },
+          { "name": "Github, Gitlab, Bitbucket", "level": 75 }
+        ]
+      },
+      {
+        "icon": "uil-swatchbook",
+        "title": "Designer",
+        "subtitle": "More than 1 years",
+        "items": [
+          { "name": "Figma", "level": 80 },
+          { "name": "Adobe XD", "level": 30 },
+          { "name": "Photoshop", "level": 85 },
+          { "name": "Corel Draw", "level": 30 }
+        ]
+      }
+    ]
+  },
+  "github": {
+    "title": "git log --graph",
+    "subtitle": "my github contribution activity"
+  },
+  "qualification": {
+    "title": "git log --journey",
+    "subtitle": "commit history of my career",
+    "education": [
+      { "title": "Computer Engineer", "place": "Nurtanio - University", "date": "2017-2020" },
+      { "title": "Master Computer Science", "place": "President - University", "date": "On Going" },
+      { "title": "Fullstack Developement", "place": "Bootcamp - Santri Koding", "date": "2021" },
+      { "title": "Fullstack Developement", "place": "Bootcamp - Built with Angga", "date": "2022" }
+    ],
+    "work": [
+      { "title": "Teacher, vocational high School", "place": "SMK Persis 02 - West Java, Bandung", "date": "2017-present" },
+      { "title": "Teacher, vocational high School", "place": "SMK Widya Dirgantara - West Java, Bandung", "date": "2017-present" },
+      { "title": "Fullstack web development", "place": "Hilfi Developer - West Java, Bandung", "date": "2017-present" },
+      { "title": "Frontend Developer", "place": "Freelance - Bandung", "date": "2022" },
+      { "title": "UI UX Design", "place": "Mentor - Nurtanio University", "date": "2021" }
+    ]
+  },
+  "services": {
+    "title": "./services --list",
+    "subtitle": "what i can build & ship for you",
+    "items": [
+      {
+        "icon": "uil-pen",
+        "title": "Software Enginer in Test (SDET)",
+        "modalTitle": "Software Quality",
+        "services": [
+          "I create testcase and idea for test strategies.",
+          "Implementations in the automation tools."
+        ]
+      },
+      {
+        "icon": "uil-arrow",
+        "title": "Frondend Developer",
+        "modalTitle": "Frondend Developer",
+        "services": [
+          "Client-side development",
+          "Test web for usability.",
+          "Operation a API between server.",
+          "maintenance features."
+        ]
+      },
+      {
+        "icon": "uil-server-connection",
+        "title": "Backend Developer",
+        "modalTitle": "Backend Developer",
+        "services": [
+          "Make a system.",
+          "adding features and maintennace.",
+          "make API between client side."
+        ]
+      },
+      {
+        "icon": "uil-web-grid",
+        "title": "Ui/Ux Designer",
+        "modalTitle": "Ui/Ux Designer",
+        "services": [
+          "I develop the user interface.",
+          "Web page development.",
+          "I create ux element interactions.",
+          "I position your company brand."
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "ls ./projects",
+    "subtitle": "recent deployments & live builds",
+    "items": [
+      { "image": "frontend/assets/img/1.jpeg", "title": "Modern Travel Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://tensholiday.com/" },
+      { "image": "frontend/assets/img/2.jpeg", "title": "Modern Pesantren Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://pesantrenpersis27.com/" },
+      { "image": "frontend/assets/img/3.jpeg", "title": "Modern Grafis Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://airygrafis.com/" },
+      { "image": "frontend/assets/img/4.jpeg", "title": "Modern Machine Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://suburbaru.hilfideveloper.com/" },
+      { "image": "frontend/assets/img/5.jpeg", "title": "Modern Schools Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://smkwidyadirgantara.sch.id/" },
+      { "image": "frontend/assets/img/6.jpeg", "title": "Modern Wedding Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://risalahati.id/" },
+      { "image": "frontend/assets/img/7.png", "title": "Sistem Administrasi Anaonline Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://anaonline.id" },
+      { "image": "frontend/assets/img/6.png", "title": "Sistem Administrasi Anisa Online Website", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://annisaonline.pemudi.persis.or.id/" },
+      { "image": "frontend/assets/img/8.png", "title": "Finance companies that provide financial services", "description": "Website adaptable to all devices, with ui components and animated interactions.", "url": "https://mofi.id/" }
+    ]
+  },
+  "projectCta": {
+    "title": "init new-project",
+    "description": "Got an idea in the backlog? Run the deploy with me and get a 30% discount on your new project.",
+    "button": "run --deploy",
+    "image": "frontend/assets/img/project1.png"
+  },
+  "testimonials": {
+    "title": "cat reviews.log",
+    "subtitle": "what my clients are saying",
+    "items": [
+      { "image": "frontend/assets/img/client.jpg", "name": "Andi Simorangkir, S.T", "role": "Client", "rating": 5, "text": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day." },
+      { "image": "frontend/assets/img/client.jpg", "name": "Preddy Budiman, S.H", "role": "Client", "rating": 5, "text": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day." },
+      { "image": "frontend/assets/img/client.jpg", "name": "Doni Budiman, S.H", "role": "Client", "rating": 5, "text": "I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day." }
+    ]
+  },
+  "contact": {
+    "title": "ssh hilman@contact",
+    "subtitle": "open a connection — let's talk",
+    "items": [
+      { "icon": "uil-phone", "title": "Call me", "value": "081914209656" },
+      { "icon": "uil-envelope", "title": "Email", "value": "halo@hilmanfirdd.my.id" },
+      { "icon": "uil-map-marker", "title": "Location", "value": "Cigondewah - Kota Bandung" }
+    ]
+  },
+  "footer": {
+    "title": "hilman_firdd",
+    "subtitle": "Fullstack Developer · SDET · DevOps",
+    "copyright": "Hilman Firdaus. All right reserved",
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Portofolio", "href": "#portfolio" },
+      { "label": "Contactme", "href": "#contact" }
+    ],
+    "socials": [
+      { "icon": "uil-whatsapp", "url": "https://wa.me/6281914209656" },
+      { "icon": "uil-facebook-f", "url": "https://www.facebook.com/HilmanFirdd" },
+      { "icon": "uil-instagram", "url": "https://www.instagram.com/hilman_firdd" },
+      { "icon": "uil-twitter-alt", "url": "https://twitter.com/hilmanfirdaus48" }
+    ]
+  }
+}

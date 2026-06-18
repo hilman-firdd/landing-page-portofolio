@@ -553,6 +553,7 @@ body.light-theme .header { background: rgba(238,241,245,.85); }
 .about__info-name {
   font-size: var(--smaller-font-size);
   color: var(--text-dim);
+  white-space: pre-line;
 }
 .about__buttons { display: flex; justify-content: flex-start; }
 
@@ -642,31 +643,9 @@ body.light-theme .header { background: rgba(238,241,245,.85); }
 .skills__open .skills__list { height: auto; opacity: 1; }
 .skills__open .skills__arrow { transform: rotate(-180deg); color: var(--green); }
 
-/* skill widths (applied when section visible -> via .skills__open or .animate) */
-.skills__open .skills__tailwind   { width: 70%; }
-.skills__open .skills__bootstrap  { width: 90%; }
-.skills__open .skills__next       { width: 40%; }
-.skills__open .skills__nuxt       { width: 50%; }
-.skills__open .skills__angular    { width: 30%; }
-.skills__open .skills__php        { width: 80%; }
-.skills__open .skills__nest       { width: 40%; }
-.skills__open .skills__golang     { width: 20%; }
-.skills__open .skills__java       { width: 40%; }
-.skills__open .skills__playwright { width: 85%; }
-.skills__open .skills__katalon    { width: 85%; }
-.skills__open .skills__webdriver  { width: 80%; }
-.skills__open .skills__cypress    { width: 80%; }
-.skills__open .skills__selenium   { width: 80%; }
-.skills__open .skills__anylanguange { width: 75%; }
-.skills__open .skills__jenkins    { width: 45%; }
-.skills__open .skills__aws        { width: 55%; }
-.skills__open .skills__gcp        { width: 40%; }
-.skills__open .skills__docker     { width: 40%; }
-.skills__open .skills__anytools   { width: 75%; }
-.skills__open .skills__figma      { width: 80%; }
-.skills__open .skills__adobe      { width: 30%; }
-.skills__open .skills__photoshop  { width: 85%; }
-.skills__open .skills__corel      { width: 30%; }
+/* skill widths are data-driven: each bar sets --lvl via :style from portfolio.json.
+   Bars fill from 0 -> --lvl (with transition) when their accordion panel opens. */
+.skills__open .skills__percentage { width: var(--lvl, 0); }
 
 @media screen and (min-width: 768px) {
   .skills_container { grid-template-columns: 1fr; max-width: 760px; margin: 0 auto; }
@@ -853,7 +832,11 @@ body.light-theme .github__day[data-level="4"] { background: #216e39; }
   padding: 1.6rem 1.2rem 1.2rem;
   transition: .3s;
 }
-.services__content:hover { border-color: var(--green); transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,.4); }
+/* NOTE: no transform on the card itself — the modal is a fixed-position child,
+   and a transform here would make the card its containing block (breaks the modal). */
+.services__content:hover { border-color: var(--green); box-shadow: 0 14px 34px rgba(0,0,0,.4); }
+.services__content > div:first-child { transition: transform .3s; }
+.services__content:hover > div:first-child { transform: translateY(-5px); }
 .services__icon {
   display: block;
   font-size: 1.8rem;
@@ -1119,7 +1102,6 @@ body.light-theme .github__day[data-level="4"] { background: #216e39; }
 }
 .footer__social:hover { color: var(--green); border-color: var(--green); transform: translateY(-3px); }
 .footer__copy {
-  margin-top: 1.6rem;
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-faint);
@@ -1131,26 +1113,64 @@ body.light-theme .github__day[data-level="4"] { background: #216e39; }
   .footer__container { grid-template-columns: 1.5fr 1fr 1fr; }
 }
 
-/*==================== SCROLL UP ====================*/
-.scrollup {
+/*==================== FOOTER BACK TO TOP ====================*/
+.footer__bottom {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: var(--green);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  padding: .5rem 1rem;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  transition: .25s;
+}
+.footer__top::before { content: "$ "; color: var(--green); }
+.footer__top:hover {
+  background: var(--green);
+  color: #04130a;
+  box-shadow: 0 0 18px var(--accent-glow);
+}
+.footer__top:hover::before { color: #04130a; }
+.footer__top i { font-size: 1rem; }
+
+/*==================== WHATSAPP FLOAT ====================*/
+.whatsapp-float {
   position: fixed;
   right: 1rem;
-  bottom: -30%;
-  background: var(--bg-elev);
-  border: 1px solid var(--green);
-  color: var(--green);
-  width: 40px; height: 40px;
-  border-radius: 8px;
+  bottom: 1.3rem;
+  width: 52px;
+  height: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  opacity: .9;
+  background: #25d366;
+  color: #04130a;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, .45);
   z-index: var(--z-tooltip);
-  transition: .35s;
+  transition: transform .25s ease, box-shadow .25s ease;
+  animation: waPulse 2.4s ease-in-out infinite;
 }
-.scrollup:hover { background: var(--green); color: #04130a; box-shadow: 0 0 18px var(--accent-glow); }
-.scrollup__icon { font-size: 1.3rem; }
-.show-scroll { bottom: 4.5rem; }
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, .7);
+}
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, .45); }
+  50%      { box-shadow: 0 6px 28px rgba(37, 211, 102, .75); }
+}
 
 /*==================== SCROLLBAR ====================*/
 ::-webkit-scrollbar { width: 9px; background: var(--bg); }

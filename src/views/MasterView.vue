@@ -38,9 +38,10 @@
         <!--==================== FOOTER ====================-->
         <footerr/>
         
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
+        <!--==================== WHATSAPP FLOAT ====================-->
+        <a :href="'https://wa.me/' + whatsapp" class="whatsapp-float" target="_blank" rel="noopener"
+            aria-label="Chat on WhatsApp">
+            <i class="uil uil-whatsapp"></i>
         </a>
 </template>
 
@@ -58,9 +59,13 @@ import Project from './pages/ProjectView.vue';
 import Testimonial from './pages/TestimonialView.vue';
 import Contact from './pages/ContactView.vue';
 import Footerr from './pages/FooterView.vue';
+import data from '../data/portfolio.json';
 
 export default {
     components: {Headerr, Home, About, Skills, Github, Qualification, Services, Portfolio, Project, Testimonial, Contact, Footerr},
-    name: 'Master'
+    name: 'Master',
+    data() {
+        return { whatsapp: data.whatsapp }
+    }
 };
 </script>

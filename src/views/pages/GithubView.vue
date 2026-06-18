@@ -1,7 +1,7 @@
 <template>
     <section class="github section" id="github">
-        <h2 class="section__title">git log --graph</h2>
-        <span class="section__subtitle">my github contribution activity</span>
+        <h2 class="section__title">{{ meta.title }}</h2>
+        <span class="section__subtitle">{{ meta.subtitle }}</span>
 
         <div class="github__container container">
             <div class="github__window term-window">
@@ -76,11 +76,14 @@
 </template>
 
 <script>
+import data from '../../data/portfolio.json'
+
 export default {
     name: 'Github',
     data() {
         return {
-            username: 'hilman-firdd',
+            meta: data.github,
+            username: data.profile.username,
             weeks: [],
             months: [],
             total: 0,

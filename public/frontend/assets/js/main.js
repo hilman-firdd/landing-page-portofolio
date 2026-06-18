@@ -82,6 +82,12 @@ modalCloses.forEach((modalClose) => {
     modalViews.forEach((modalView) => modalView.classList.remove('active-modal'))
   })
 })
+/* close a modal when clicking its dark backdrop (outside the content box) */
+modalViews.forEach((modalView) => {
+  modalView.addEventListener('click', (e) => {
+    if (e.target === modalView) modalView.classList.remove('active-modal')
+  })
+})
 
 /*==================== PORTFOLIO SWIPER ====================*/
 let portofolio__container = new Swiper(".portofolio__container", {
@@ -130,14 +136,6 @@ function scrollHeader() {
   else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-/*==================== SHOW SCROLL UP ====================*/
-function scrollUp() {
-  const scrollUp = document.getElementById('scroll-up')
-  if (this.scrollY >= 460) scrollUp.classList.add('show-scroll')
-  else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
 
 /*==================== DARK / LIGHT THEME (default = dark terminal) ====================*/
 const themeButton = document.getElementById('theme-button')
@@ -220,18 +218,18 @@ function rotateRoles(el, roles) {
   const roleEl = document.getElementById('typed-role')
   if (!cmdEl || !outputEl) return
 
+  // content is data-driven (see src/data/portfolio.json -> rendered as data-* attrs)
+  const cmdText = cmdEl.dataset.cmd || 'whoami && cat profile.json'
+  let roles = ['Fullstack Developer', 'DevOps Engineer', 'UI/UX Designer']
+  try {
+    if (roleEl && roleEl.dataset.roles) roles = JSON.parse(roleEl.dataset.roles)
+  } catch (e) { /* keep fallback roles */ }
+
   setTimeout(() => {
-    typeInto(cmdEl, 'whoami && cat profile.json', 55, () => {
+    typeInto(cmdEl, cmdText, 55, () => {
       if (cursorEl) cursorEl.style.display = 'none'
       outputEl.style.display = 'block'
-      if (roleEl) {
-        rotateRoles(roleEl, [
-          'Fullstack Developer',
-          'Software Engineer in Test (SDET)',
-          'DevOps Engineer',
-          'UI/UX Designer'
-        ])
-      }
+      if (roleEl) rotateRoles(roleEl, roles)
     })
   }, 600)
 })()

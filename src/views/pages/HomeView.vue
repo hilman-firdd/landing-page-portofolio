@@ -3,17 +3,9 @@
         <div class="home__container container grid">
             <div class="home__content grid">
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/hilmanfirdd/" class="home__social-icon" target="_blank">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://www.instagram.com/hilman_firdd" class="home__social-icon" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://github.com/hilman-firdd" class="home__social-icon" target="_blank">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=6281914209656" class="home__social-icon" target="_blank">
-                        <i class="uil uil-whatsapp"></i>
+                    <a v-for="(social, i) in profile.socials" :key="i" :href="social.url"
+                        class="home__social-icon" target="_blank" rel="noopener">
+                        <i class="uil" :class="social.icon"></i>
                     </a>
                 </div>
 
@@ -21,19 +13,16 @@
                     <div class="hero-term term-window">
                         <div class="term-window__bar">
                             <div class="term-window__dots"><span></span><span></span><span></span></div>
-                            <span class="term-window__title"><i class="uil uil-shell"></i> hilman@portfolio: ~</span>
+                            <span class="term-window__title"><i class="uil uil-shell"></i> {{ profile.terminalTitle }}</span>
                         </div>
                         <div class="term-window__body hero-term__body">
-                            <p class="hero-line"><span class="prompt"><span class="user">visitor</span><span class="at">@</span><span class="host">portfolio</span><span class="sym">:</span><span class="path">~</span><span class="sym">$</span></span> <span id="hero-cmd" class="cmd"></span><span class="cursor" id="hero-cursor"></span></p>
+                            <p class="hero-line"><span class="prompt"><span class="user">visitor</span><span class="at">@</span><span class="host">portfolio</span><span class="sym">:</span><span class="path">~</span><span class="sym">$</span></span> <span id="hero-cmd" class="cmd" :data-cmd="profile.heroCommand"></span><span class="cursor" id="hero-cursor"></span></p>
                             <div class="hero-output" id="hero-output" style="display:none">
-                                <h1 class="home__title">Hi, I'm <span class="accent">Hilman Firdaus</span></h1>
+                                <h1 class="home__title">Hi, I'm <span class="accent">{{ profile.name }}</span></h1>
                                 <h3 class="home__subtitle">
-                                    <span class="sym">&gt;</span> <span class="role" id="typed-role"></span><span class="cursor"></span>
+                                    <span class="sym">&gt;</span> <span class="role" id="typed-role" :data-roles="rolesJson"></span><span class="cursor"></span>
                                 </h3>
-                                <p class="home__description">
-                                    High level experience in web design &amp; development, building, testing and
-                                    shipping high quality software end-to-end.
-                                </p>
+                                <p class="home__description">{{ profile.description }}</p>
                             </div>
                         </div>
                     </div>
@@ -56,7 +45,17 @@
 </template>
 
 <script>
+import data from '../../data/portfolio.json'
+
 export default {
-    name: 'Home'
+    name: 'Home',
+    data() {
+        return { profile: data.profile }
+    },
+    computed: {
+        rolesJson() {
+            return JSON.stringify(this.profile.roles)
+        }
+    }
 };
 </script>
